@@ -1,0 +1,42 @@
+This project is a simple web-based Live Character Counter designed with HTML, CSS, and JavaScript. The program captures the user’s input from a textarea and dynamically updates the total number of characters typed (spaces included).
+
+HTML (Page Layout)
+The HTML file mainly has two components: a container <div> and a <script> section.
+
+Container <div>
+Displays the page title: "Live Character Counter".
+Provides a textarea (with id="txtData") where users can input text, along with a placeholder as guidance.
+Includes another <div> with the class counter that shows the live count of typed characters.
+
+Script Section
+JavaScript is written inside the <script> tag.
+An event listener (input) is added to the textarea so the code runs whenever the user types.
+The script retrieves the entered text using textarea.value.length and updates the span (with id="counter") to reflect the new character count.
+
+CSS (Design & Styling)
+The webpage design is handled through CSS:
+
+Body
+Uses Arial, sans-serif font.
+Adds a margin of 10px for spacing.
+
+Textarea
+Set to occupy full width of the viewport (width: 100%).
+Larger, readable font size (18px).
+Added padding of 10px for a better user experience.
+Enabled box-sizing: border-box to ensure padding doesn’t affect layout.
+
+Counter (.counter)
+Displays bold text.
+Adds small spacing above (margin-top: 5px).
+
+Box (.box)
+Outlined with a 2px solid black border.
+Provides internal padding of 10px.
+Includes margin-bottom: 20px for separation.
+Restricts maximum width to 500px for cleaner structure.
+
+Key Learnings:
+Gained hands-on experience in JavaScript basics like variable usage and DOM updates.
+Learned how to handle events effectively using addEventListener.
+Practiced structuring a webpage with HTML and applying consistent styling using CSS.

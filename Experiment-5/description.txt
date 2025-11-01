@@ -1,0 +1,55 @@
+Project Summary: Dynamic Product Filtering Tool
+
+This project demonstrates a simple Product Filter application created using HTML and JavaScript.
+It allows users to add products with information such as ID, Name, Price, and Category.
+Once products are added, they can be filtered through a dropdown menu, which updates automatically whenever a new category is introduced.
+
+Structure of the Webpage (HTML)
+The page is organized inside a main <div class="container"> and has three key sections:
+Product Entry Form
+Heading: “Enter Product Details”
+Four input fields:
+Product ID
+Product Name
+Price
+Category
+A button labeled Add Product, which calls the addProduct() function.
+
+Category Filter
+Heading: “Filter by Category”
+A <select> element with the ID categoryDropdown
+Always includes an All option to show every product.
+
+Product Display Area
+Heading: “Product List”
+A <div> with ID productList that dynamically shows the products.
+Logic of the Application (JavaScript)
+
+Adding Products (addProduct)
+Reads values from the input fields.
+Checks that no field is left empty.
+Creates a product object and pushes it into the products[] array.
+Updates the category dropdown and refreshes the product list.
+Clears the input fields for new entries.
+
+Updating Categories (updateCategoryDropdown)
+Extracts all unique categories from the current product list.
+Rebuilds the dropdown while keeping “All” as the default option.
+
+Filtering Products (filterProducts)
+Displays products based on the category selected.
+If “All” is chosen, products are grouped by their categories.
+Handles empty cases by showing suitable messages.
+
+Clearing Inputs (clearInputs)
+Resets all form fields after a product is successfully added.
+
+Initial Behavior
+When the page loads, filterProducts() runs immediately.
+If no products exist, the message “No products added yet.” is displayed.
+
+Key Takeaways
+Updating webpage content dynamically using JavaScript DOM methods.
+Representing products as objects stored in an array.
+Implementing filtering logic to display category-wise results.
+Building a small system that refreshes automatically without page reloads.
